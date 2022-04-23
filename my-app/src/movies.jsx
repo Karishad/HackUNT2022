@@ -1,28 +1,31 @@
 import React, {useState} from 'react'
+import "bootstrap/dist/css/bootstrap.min.css"
+import "./"
+import MovieList from movieList.js
 
 const movies = () => {
     const [movie, setMovie] = useState([
         {
             "Title": "Space Jam",
-            "Poster": "",
+            "Poster": "../MovieImages/SpaceJam.jpg",
             "Times": "",
             "Seats Avalaible": ""
         },
         {
-            "Title": "Space Jam Odyssey",
-            "Poster": "",
+            "Title": "Space Jam - A New Legacy",
+            "Poster": "../MovieImages/SpaceJamANewLegacy.webp",
             "Times": "",
             "Seats Avalaible": ""
         },
         {
             "Title": "Space Ball",
-            "Poster": "",
+            "Poster": "../MovieImages/SpaceBalls.webp",
             "Times": "",
             "Seats Avalaible": ""
         },
         {
             "Title": "Space Odyssey",
-            "Poster": "",
+            "Poster": "../MovieImages/2001ASpaceOdyssey.jpg",
             "Times": "",
             "Seats Avalaible": ""
         },
@@ -69,7 +72,11 @@ const movies = () => {
             "Seats Avalaible": ""
         }
     ]);
-    
+    return( <div className="container-fluid rows">
+        <div className="row"><MovieList movie = {movie} /></div>
+        
+    </div>
+    );
 };
 
 export default movies;
