@@ -1,7 +1,7 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./"
-import MovieList from movieList.js
+import MovieList from "./movieList"
 
 const movies = () => {
     const [movie, setMovie] = useState([
@@ -72,9 +72,9 @@ const movies = () => {
             "Seats Avalaible": ""
         }
     ]);
-    return( <div className="container-fluid rows">
-        <div className="row"><MovieList movie = {movie} /></div>
-        
+    return (<div className="container-fluid rows">
+        <div className="row"><MovieList movie={movie} /></div>
+
     </div>
     );
 };
