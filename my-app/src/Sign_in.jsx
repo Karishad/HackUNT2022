@@ -23,7 +23,7 @@ function Sign_In() {
     };
 
 
-    const rendorErrorMessage = (name) =>
+    const renderErrorMessage = (name) =>
         name === errorMessages.name && (<div className="error">{errorMessages.message}</div>
         );
 
@@ -32,10 +32,10 @@ function Sign_In() {
 
         var { user, pass } = document.forms[0];
 
-        const userData = database.find((user) => user.username == user.value)
+        const userData = database.find((user) => user.username === user.value)
 
         if (userData) {
-            if (userData.password != pass.value) {
+            if (userData.password !== pass.value) {
                 setErrorMessages({ name: "pass", message: errors.pass })
             }
             else {
@@ -43,7 +43,7 @@ function Sign_In() {
             }
         }
         else {
-            setErrorMessages({ name: "uname", message: errors, uname });
+            setErrorMessages({ name: "user", message: errors, user });
         }
     };
 
@@ -76,14 +76,14 @@ function Sign_In() {
         <div className="app">
             <div className="form">
                 <div className="title">Sign In</div>
-                {isSubmitted ? <div>Welcome</div> : rendorForm}
+                {isSubmitted ? <div>Welcome</div> : Form}
             </div>
         </div>
     );
 }
 
 const rootElement = document.getElementById("root");
-ReactDom.render(<Sign_In />, rootElement);
+ReactDOM.render(<Sign_In />, rootElement);
 
 
 
