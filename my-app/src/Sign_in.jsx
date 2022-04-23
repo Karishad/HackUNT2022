@@ -84,6 +84,6 @@ function Sign_In() {
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(<Sign_In />, rootElement);
-
+export default Sign_In;
 
 
