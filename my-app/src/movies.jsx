@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
-import "bootstrap/dist/css/bootstrap.min.css"
-import "./"
 import MovieList from "./movieList"
 
-const movies = () => {
+const Movies = () => {
     const [movie, setMovie] = useState([
         {
             "Title": "Space Jam",
@@ -79,4 +77,4 @@ const movies = () => {
     );
 };
 
-export default movies;
+export default Movies;
