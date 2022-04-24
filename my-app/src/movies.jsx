@@ -16,7 +16,7 @@ const Movies = () => {
             "Seats Avalaible": ""
         },
         {
-            "Title": "Space Ball",
+            "Title": "Space Balls",
             "Poster": "../MovieImages/SpaceBalls.webp",
             "Times": "",
             "Seats Avalaible": ""
