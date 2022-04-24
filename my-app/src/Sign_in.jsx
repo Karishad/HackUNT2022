@@ -84,7 +84,7 @@ function Sign_In() {
         <div className="app">
             <div className="login-form">
                 <div className="title">Sign In</div>
-                {isSubmitted ? <Route path="/movies" component={Movies} /> : renderForm}
+                {isSubmitted ? onclick = { Movies } : renderForm}
             </div>
         </div>
     );

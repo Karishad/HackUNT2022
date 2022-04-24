@@ -73,9 +73,7 @@ const Movies = () => {
             "Seats Avalaible": ""
         }
     ]);
-    const element = (
-        <h1>Welcome User</h1>
-    );
+
     const renderForm = {
 
     };
