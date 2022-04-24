@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import MovieList from "./movieList"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import "./movie.css";
 
 const Movies = () => {
     const [movie, setMovie] = useState([
@@ -70,6 +73,13 @@ const Movies = () => {
             "Seats Avalaible": ""
         }
     ]);
+    const element = (
+        <h1>Welcome User</h1>
+    );
+    const renderForm = {
+
+    };
+
     return (<div className="container-fluid rows">
         <div className="row"><MovieList movie={movie} /></div>
 
